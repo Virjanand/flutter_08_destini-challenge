@@ -36,15 +36,15 @@ class StoryBrain {
   ];
 
   String getStory() {
-    return _storyData[_storyNumber].storyTitle;
+    return _storyData[_storyNumber].getStoryTitle();
   }
 
   String getChoice1() {
-    return _storyData[_storyNumber].choice1;
+    return _storyData[_storyNumber].getChoice1();
   }
 
   String getChoice2() {
-    return _storyData[_storyNumber].choice2;
+    return _storyData[_storyNumber].getChoice2();
   }
 
   void nextStory(int choiceNumber) {
